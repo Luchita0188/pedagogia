@@ -2,7 +2,7 @@
   "coverPage": {
     "type": "startPage",
     "units": 1,
-    "subTitle": "Induccion corporativa",
+    "subTitle": "<i>Inducción corporativa</i>",
     "title": "Módulo Pedagogía",
     "module": "",
     "courseName": "Para comenzar, haz clic en el siguiente botón:",
@@ -30,7 +30,7 @@
         "img1": "img/1/unid-2.png"
       },
       {
-        "text1": "Apaga tu celular o ponlo en silencio",
+        "text1": "<b>Apaga</b> tu celular o <b>ponlo</b> en silencio",
         "img1": "img/1/unid-3.png"
       },
       {
@@ -96,7 +96,7 @@
         },
         "itemInfo": {
           "title": "",
-          "text": "En la presente inducción, se reconocerán algunos de los elementos primordiales a tener presente en <b>nuestro actuar profesional y profesoral.</b> Se invita a prestar atención al espacio interactivo diseñado para usted e igualmente a hacer lectura de los documentos institucionales necesarios en nuestro quehacer docente, Proyecto Educativo Institucional y Modelo Pedagógico Integrador.",
+          "text": "En la presente inducción, se reconocerán algunos de los elementos primordiales a tener presente en <b>nuestro actuar profesional y profesoral.</b> Se invita a prestar atención al espacio interactivo diseñado para usted e igualmente a hacer lectura de los documentos institucionales necesarios en nuestro <b>que hacer docente, Proyecto Educativo Institucional y Modelo Pedagógico Integrador.</b>",
           "posGlobe": {
             "posY": -66,
             "posX": 330
@@ -112,7 +112,7 @@
         },
         "itemInfo": {
           "title": "",
-          "text": "Surtidos los dos pasos anteriores se invita a realizar el cuestionario donde se medirá la comprensión de los elementos más relevantes de este proceso de inducción, no sin antes explicitar que posterior a este momento de inducción virtual, se desarrollarán momentos personalizados donde se aclararon dudas y se ofrecerán lineamientos para su actuación en la <b>IUSH.</b>",
+          "text": "Surtidos los dos pasos anteriores se invita a realizar el cuestionario donde se medirá la comprensión de los elementos más relevantes de este proceso de inducción, no sin antes explicitar que posterior a este momento de inducción virtual, se desarrollarán momentos personalizados donde se aclararán dudas y se ofrecerán lineamientos para su actuación en la <b>IUSH.</b>",
           "posGlobe": {
             "posY": -70,
             "posX": 600
@@ -137,7 +137,7 @@
     "startUnit": true,
     "nameUnit": "unit1",
     "title": "Aspectos generales",
-    "text": " <br>La organización que ofrece los lineamientos generales y estratégicos para el desarrollo de la IUSH es la Arquidiócesis de Medellín, el Arzobispo y sus delegados, en conjunto con miembros de la comunidad educativa IUSH, estos son quienes, a través de sus órganos decisorios, ofrecen los objetivos estratégicos, los proyectos macro y las orientaciones filosóficas y pedagógicas a la institución.</br> <br> Ahora bien, los elementos visibles y más reconocidos por la comunidad académica, estudiantil, empresarial y externa, de las prácticas pedagógicas que se desarrollan en la IUSH, son:</br> <br> Conoce los compromisos y responsabilidad que tenemos como empleados en la seguridad fisica. Da clic en el número de cada figura </br>",
+    "text": " <br>La organización que ofrece los lineamientos generales y estratégicos para el desarrollo de la IUSH es la Arquidiócesis de Medellín, el Arzobispo y sus delegados, en conjunto con miembros de la comunidad educativa IUSH, estos son quienes, a través de sus órganos decisorios, ofrecen los objetivos estratégicos, los proyectos macro y las orientaciones filosóficas y pedagógicas a la institución.</br> <br> Ahora bien, los elementos visibles y más reconocidos por la comunidad académica, estudiantil, empresarial y externa, de las prácticas pedagógicas que se desarrollan en la IUSH, son:</br>",
     "background": {
       "bg": "img/3/bgPage-3.png"
     },
@@ -220,7 +220,7 @@
     ],
     "instruction": {
       "type": "mouse",
-      "text": "Haz clic en los círculos para visualizar todas las recomendaciones.",
+      "text": "Haz clic en orden consecutivo en cada uno de los números para conocer la información.",
       "posY": 50,
       "posX": 660,
       "size": 330,
@@ -243,7 +243,7 @@
 
     "instruction": {
       "type": "mouse",
-      "text": "Haz clic en los botones leer más para conocer la información..",
+      "text": "Haz clic donde dice “Leer más” para conocer toda la conversación.",
       "posY": 50,
       "posX": 600,
       "size": 330,
@@ -252,7 +252,7 @@
     "boxInfo": {
       "title": "Reproducir video",
       "text": "",
-      "imgBg": "img/4/bgPage-1.png"
+      "imgBg": "img/4/icon-button.png"
     },
     "modal": {
       "closedModal": true
@@ -270,7 +270,7 @@
         },
 
         {
-          "text": "¡• Sea un ser humano coherente entre lo que dice, piensa y actúa. <br>•Sea profesional, que en el trato con las personas sea cordial, respetuoso y asertivo.</br> <br>• Sea experto(a) en un área o áreas del saber.<br>Practique didácticas que promuevan la innovación y la calidad en los procesos formativos.</br> </br> • Tenga la capacidad para trabajar en equipo y asumir responsabilidades.",
+          "text": " •Sea un ser humano coherente entre lo que dice, piensa y actúa. </br> </br>•Sea profesional, que en el trato con las personas sea cordial, respetuoso y asertivo. </br> <br>• Sea experto(a) en un área o áreas del saber.<br>Practique didácticas que promuevan la innovación y la calidad en los procesos formativos.</br> </br> • Tenga la capacidad para trabajar en equipo y asumir responsabilidades.",
           "side": "mT-1 messageRightIcon-1 separator"
         },
 
@@ -280,7 +280,7 @@
         },
 
         {
-          "text": "Por ser una Institución Católica, posee los siguientes fundamentos: • El humanismo cristiano. • La construcción colectiva y social del aprendizaje.• El desarrollo de capacidades y competencias.• La innovación como eje articulador.",
+          "text": "Por ser una Institución Católica, posee los siguientes fundamentos: <br>• El humanismo cristiano. <br>• La construcción colectiva y social del aprendizaje. <br>• El desarrollo de capacidades y competencias. <br>• La innovación como eje articulador.",
           "side": "mT-1 messageRightIcon-1 separator"
         },
 
@@ -289,7 +289,7 @@
           "side": "mT-1 messageLeftIcon-1 separator"
         },
         {
-          "text": "Acá, hay 4 tipos de vinculación para los docentes, estos son:• Docente de tiempo completo• Docente de medio tiempo• Docente de cátedra• Prestador de servicios",
+          "text": "Acá, hay 4 tipos de vinculación para los docentes, estos son:<br>• Docente de tiempo completo. <br>• Docente de medio tiempo.<br>• Docente de cátedra• Prestador de servicios.",
           "side": "mT-1 messageRightIcon-1 separator"
         },
 
@@ -316,7 +316,7 @@
     "nota": "<b>Los niveles de formación que ofrece la IUSH son:</b> Técnico, tecnológico, profesional, posgrados y desde el Centro de Extensión y Proyección Social (cursos, diplomados, proyectos, entre otros).",
     "instruction": {
       "type": "mouse",
-      "text": "Haz clic en los círculos para visualizar todas las recomendaciones.",
+      "text": "Haz clic en cada icono para conocer la información.",
       "posY": 50,
       "posX": 660,
       "size": 330,
@@ -462,22 +462,22 @@
 
   "page7": {
     "type": "pageCourse",
-    "title": "¿Con quién debe tener contacto directo el docente?",
-    "text": "A nivel administrativo, el docente debe tener contacto con:",
+    "title": "¿Cómo se evalúa el ejercicio docente en la IUSH",
+    "text": "Para todos los docentes de la IUSH, antes de finalizar cada proceso formativo, se realiza un ejercicio de evaluación de la siguiente manera:",
     "img": "img/7/unid-7.png"
   },
 
   "page8": {
     "type": "pageCourse",
     "title": "¡Has llegado al final de este recorrido!",
-    "text": "<br>Se invita a leer los documentos que a continuación se alojan en la plataforma. Posterior al desarrollo de esta lectura y a la observación de lo anteriormente mencionado, realizar el siguiente ejercicio valorativo del proceso. Debe aprobarse al menos el 80% para dar continuidad en el proceso de inducción.</br><br>Estamos seguros que tienes nuevos aprendizajes y que pondrás en práctica este conocimiento.</br>",
+    "text": "<br>Se invita a la observación de toda la información anteriormente mencionada y a realizar el siguiente ejercicio valorativo del proceso. Debe aprobarse al menos el 80% para dar continuidad en el proceso de inducción.</br> <br> Estamos seguros que tienes nuevos aprendizajes y que pondrás en práctica este conocimiento.",
     "text1": "¡Muchas gracias!",
     "button": "Realizar prueba final",
     "img": "img/8/NPC-1.png",
 
     "instruction": {
       "type": "mouse",
-      "text": "Haz clic sobre el botón realizar prueba final para descubrir la información",
+      "text": "Realiza el ejercicio valorativo dando clic en el botón azul.",
       "posY": 50,
       "posX": 600,
       "size": 330,
@@ -488,7 +488,7 @@
   "page9": {
     "type": "pageCourse",
     "title": "Ejercicio valorativo de este módulo",
-    "text": "Responde Verdadero o Falso de acuerdo con el contenido que estudiaste de este módulo. <b>¡Éxitos!</b>",
+    "text": "Responde Verdadero o Falso de acuerdo con el contenido que estudiaste                        de este módulo <b>¡Éxitos!</b>",
     "multimedia": {
       "modal": {
         "check": {
@@ -532,7 +532,7 @@
                   "lines": [
                     {
                       "key": 1,
-                      "text": "1. Los lineamientos pedagógicos que adopta la IUSH son principalmente los que indica la Secretaria de Educación de Medellín.",
+                      "text": "1. Los lineamientos pedagógicos que adopta la IUSH son principalmente los que indica la Secretaría de Educación de Medellín.",
                       "posY": 30,
                       "posX": 40
                     }

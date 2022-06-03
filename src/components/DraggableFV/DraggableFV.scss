@@ -9,8 +9,8 @@
       background-color: #86BF41;
       border-radius: 10px;
       top: 5px;
-      left: 7px;
-      width: 542px;
+      left: 49px;
+      width: 502px;
       height: 229px;
       h1 {
         color: #fff;
@@ -21,8 +21,8 @@
       background-color: #D00814;
       border-radius: 10px;
       top: 5px;
-      left: 7px;
-      width: 542px;
+      left: 49px;
+      width: 502px;
       height: 229px;
       h1 {
         color: #fff;
@@ -58,7 +58,7 @@
         // border: 1px dotted #ACACAC;
         // border-radius: 50px;
         &:before {
-          content: 'Haz Finalizado';
+          content: 'Has finalizado';
           color: #ACACAC;
           font-size: 3rem;
           font-weight: 700;
@@ -76,7 +76,7 @@
       background-color: rgba(0, 0, 0, 0);
 
       .iconButton {
-        font-size: 2em;
+        font-size: 2.5em;
         color: $color1;
         transition: all .3s;
       }

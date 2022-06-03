@@ -19,7 +19,7 @@ const DragWord = ({ text, type, id, countWords, img, imgSource }) => {
         document.getElementById('dragWord-' + id).classList.add('dNone');
 
         if (text) {
-          document.getElementById('textDrop').innerHTML = '<p class = "blanco mB-1">' + text + '"</p>';
+          document.getElementById('textDrop').innerHTML = '<p class = "blanco">' + text + '</p>';
         }
 
         if (imgSource) {

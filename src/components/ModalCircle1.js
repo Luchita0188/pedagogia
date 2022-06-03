@@ -32,7 +32,6 @@ class ModalCircle1 extends Component {
             className = { 'circleButton ' + ( i + 1 !== 1 ? 'disabledGray' : '')} 
             id = { i + 1 } 
             onClick = { this.enableItem } >
-
             <img alt = '' className = '' id = { i + 1 } src = { item.urlImgBtn }/>
           </button>
         </div>
@@ -108,10 +107,6 @@ class ModalCircle1 extends Component {
               <h4 className = 'mB-1 titleGlobe pT-2 pB-1 pR-2 pL-1 F2-5 line-1'>{ multimedia[actualItem - 1].itemInfo.title }</h4>
 
               <p className = 'mB-1 mL-025 pB-1 fw-4' dangerouslySetInnerHTML = { { __html: multimedia[actualItem - 1].itemInfo.text1 }}/>
-              {
-                multimedia[actualItem - 1].itemInfo.text2 &&
-                <p className = 'c-75 enfasis-1' dangerouslySetInnerHTML = { { __html: multimedia[actualItem - 1].itemInfo.text2 } } />
-              }
 
               { 
                 multimedia[actualItem - 1].itemInfo.buttonClose.closedModal === true ?

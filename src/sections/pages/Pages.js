@@ -63,37 +63,53 @@ class Cover extends Component {
     };
 
     return (
-      <div className={ (dataPage.type) + ' pL-4 animated fadeIn' } style = { style }>
+      <div className={dataPage.type + " pL-4 animated fadeIn"} style={style}>
         <div className="c-7 dF-C-cs">
+          {dataPage.logoCourse && (
+            <img
+              alt="Imagen Corporativa"
+              className="imageLogo mR-3 mT-4 mB-2"
+              src={dataPage.logoCourse}
+            />
+          )}
           {
-            dataPage.logoCourse && <img
-              alt = 'Imagen Corporativa'
-              className = 'imageLogo mR-3 mT-4 mB-2'
-              src = { dataPage.logoCourse }/>
-          }
+          dataPage.subTitle && (
+            <h3
+              className="mB-1 pB-05"
+              dangerouslySetInnerHTML={{ __html: dataPage.subTitle }}
+            ></h3>
+          )}
+
           {
-            dataPage.title && <h1 className = 'mT-2 mB-1 F3' dangerouslySetInnerHTML = {{ __html: dataPage.title }}></h1>
-          }
-          {
-            dataPage.subTitle && <h3 className = 'mB-1 pB-05' dangerouslySetInnerHTML = {{ __html: dataPage.subTitle }}></h3>
-          }
-          {
-            dataPage.module && <h3 className = 'mB-1 mR-4' dangerouslySetInnerHTML = {{ __html: dataPage.module }}></h3>
-          } 
-          {
-            dataPage.courseName && <p className = 'mB-2 mR-2 texto2 fw-4' dangerouslySetInnerHTML = {{ __html: dataPage.courseName }}></p>
-          }
+          dataPage.title && (
+            <h1
+              className="mT-2 mB-1 F3"
+              dangerouslySetInnerHTML={{ __html: dataPage.title }}
+            ></h1>
+          )}
+
+          {dataPage.module && (
+            <h3
+              className="mB-1 mR-4"
+              dangerouslySetInnerHTML={{ __html: dataPage.module }}
+            ></h3>
+          )}
+          {dataPage.courseName && (
+            <p
+              className="mB-2 mR-2 texto2 fw-4"
+              dangerouslySetInnerHTML={{ __html: dataPage.courseName }}
+            ></p>
+          )}
 
           <button
-            className = 'buttonQuiz pL-3 pR-5'
-            onClick = { this.startCourse }
-            id = { 'btnIniciar' }
-            style = { styleBtn }
-            >
-              Iniciar
+            className="buttonQuiz pL-3 pR-5"
+            onClick={this.startCourse}
+            id={"btnIniciar"}
+            style={styleBtn}
+          >
+            Iniciar
           </button>
         </div>
-
       </div>
     );
   }
@@ -288,7 +304,7 @@ render() {
     return (
       <div className = { 'pageContent'}>
         <div className = 'c-10 animated fadeIn'>
-          <div className = 'c-10 animated fadeIn d-Flex aI-C j-S pT-3 mL-1'>
+          <div className = 'c-10 animated fadeIn d-Flex aI-C j-S pT-4 mL-1'>
             <div className = 'mL-5 c-35 mT-4'> 
               {
                 dataPage.title ? <h2 className = 'mB-1 F1-5' dangerouslySetInnerHTML = {{ __html: dataPage.title }}></h2> : null
@@ -297,7 +313,7 @@ render() {
                 dataPage.text ? <p className = 'mB-1 fw-4' dangerouslySetInnerHTML = {{ __html: dataPage.text }}></p> : null
               }
             </div>
-            <div className = 'c-5 d-Flex j-C aI-S mT-2' style = {style}>
+            <div className = 'c-6 d-Flex j-C aI-S mT-2 mL-3 mB-1' style = {style}>
               <ModalCircle1 dataPage = { dataPage } isEnded = { this.isEnded } />
             </div>
           </div>
@@ -507,7 +523,7 @@ class Page8 extends Component {
             }
 
             <button
-              className = 'buttonQuiz1 pT-1 pB-1 pL-2 fw-3 pR-2 mL-6 mB-3 aI-C '
+              className = 'buttonQuiz1 pT-1 pB-1 pL-2 fw-3 pR-2 mL-6 mB-3 aI-C'
               id = 'btnQuiz'
               onClick = { this.startQuiz }>
               { dataPage.button }
@@ -544,7 +560,7 @@ class Page9 extends Component {
             className = 'F2 mB-1 mL-3' dangerouslySetInnerHTML = {{ __html: dataPage.title }}></h3>: null
           }   
           {
-             dataPage.text ? <p className = 'mL-3 mB-1 mT-3 fw-4' dangerouslySetInnerHTML = {{ __html: dataPage.text }}></p> : null
+             dataPage.text ? <p className = ' d-Flex j-Bt mL-3 mB-4 mT-4 fw-4 mR-3 pT-1' dangerouslySetInnerHTML = {{ __html: dataPage.text }}></p> : null
           }
           </div>
 
