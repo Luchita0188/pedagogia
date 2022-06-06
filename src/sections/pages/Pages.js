@@ -554,17 +554,17 @@ class Page9 extends Component {
     return(
       <div className = { 'pageContent'}>
         <div className = 'c-10 animated fadeIn'>
-          <div className = 'mL-3 c-6 mT-4 mR-3'> 
+          <div className = 'mL-2 mT-3'> 
           {
             dataPage.title ? <h3
-            className = 'F2 mB-1 mL-3' dangerouslySetInnerHTML = {{ __html: dataPage.title }}></h3>: null
+            className = 'F2 mB-2 mL-3' dangerouslySetInnerHTML = {{ __html: dataPage.title }}></h3>: null
           }   
           {
-             dataPage.text ? <p className = ' d-Flex j-Bt mL-3 mB-4 mT-4 fw-4 mR-3 pT-1' dangerouslySetInnerHTML = {{ __html: dataPage.text }}></p> : null
+             dataPage.text ? <p className = ' mL-3 mB-2 mT-2 fw-4 mR-05' dangerouslySetInnerHTML = {{ __html: dataPage.text }}></p> : null
           }
           </div>
 
-          <div className = 'mL-5 mT-2'>
+          <div className = 'mL-5 mT-3'>
            <Quiz1 multimedia = { dataPage.multimedia } isEnded = { this.isEnded } endQuiz = { this.endQuiz } setScore = { this.props.setScore }/>
         </div> 
       </div>

@@ -16,7 +16,7 @@ const DragWord = ({ count1, count2, name, type, id, countWords, color, img, ques
         document.getElementById('boxDrop-' + dropResult.id).classList.add('WordDropped');
         document.getElementById('boxCheck').classList.remove('dNone');
 
-        document.getElementById('btnSig').classList.remove('disabled');
+        document.getElementById("btnSig").classList.remove("disabled");
 
         document.getElementById('audioNotification').src = 'audio/check.mp3';
         document.getElementById('audioNotification').play();
@@ -27,11 +27,12 @@ const DragWord = ({ count1, count2, name, type, id, countWords, color, img, ques
         document.getElementById('audioNotification').play();
 
         document.getElementById('boxError').classList.remove('dNone')
+        document.getElementById('btnSig').classList.remove('disabled');
+
+        document.getElementById('btnAnt').classList.remove('disabled');
         
       } 
-      document.getElementById("contentWords").classList.add("enabledSolid");
-      
-      document.getElementById('btnAnt').classList.remove('disabled');
+      document.getElementById("contentWords").classList.add("disabledSolid");
       setTimeout(
           () => {document.getElementById('boxError').classList.add('dNone')}
           , 2000
