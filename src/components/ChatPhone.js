@@ -21,9 +21,9 @@ class ChatPhone extends Component {
           {
             dataPage.multimedia.messages.map( (item, i) => {
               return(
-                <div key = { i } className = {'mB-05 pT-2' + (item.side)} >
+                <div key = { i } className = {'mB-1 pT-1' + (item.side)} >
                   {
-                    item.img ? <img alt = 'Imagen mB-05 pT-1' className = '' src = { item.img }/> : null
+                    item.img ? <img alt = 'Imagen mB-1 pT-1' className = '' src = { item.img }/> : null
                   }
                   <p className = '' dangerouslySetInnerHTML = { { __html: item.text } } />
                 </div>
