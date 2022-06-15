@@ -32,6 +32,8 @@ class DraggableFV extends Component {
     const { multimedia, accumulatedPoints, nextQuestion, endQuiz } = this.props;
   
 
+    document.getElementById('btnSig').classList.remove('disabled');
+
     document.getElementById("contentWords").classList.remove("disabledSolid");
     document.getElementById("boxCheck").classList.add("dNone");
     document.getElementById("boxError").classList.add("dNone");
@@ -57,9 +59,13 @@ class DraggableFV extends Component {
         page: this.state.page - 1,
       });
     }
+<<<<<<< HEAD
     if (this.state.page === multimedia.dropZone.paragraph.length - 1) {
       document.getElementById('btnAnt').classList.add('disabled');
       endQuiz();
+=======
+    if (this.state.page === multimedia.dropZone.paragraph.length) {
+>>>>>>> 127b31e377ae884e1cde2329e0654b96e0e41821
     }
   }
 
@@ -131,7 +137,11 @@ class DraggableFV extends Component {
             </div>
 
             <button
+<<<<<<< HEAD
               className = { 'buttonSlide mL-05 ' + (this.state.page === multimedia.dropZone.paragraph.length ? '' : 'pulse') } id = 'btnSig' 
+=======
+              className = { 'buttonSlide mL-05 ' + (this.state.page == multimedia.dropZone.paragraph.length ? '' : 'pulse') } id = 'btnSig' 
+>>>>>>> 127b31e377ae884e1cde2329e0654b96e0e41821
               onClick={this.mSlides}
             >
               <span className="fa-layers fa-fw iconButton">
