@@ -24,12 +24,12 @@ class ModalCircle1 extends Component {
 
   showItems = () => {
     const { dataPage } = this.props;
-    return dataPage.multimedia.map( (item, i) => {
+    const ITEM = dataPage.multimedia.map( (item, i) => {
       // console.log(item);
       return(
-        <div className = 'circleItems' key = { i } style= {{'top': item.itemInfo.pos.top, 'left': item.itemInfo.pos.left}}>
+        <div className = 'circleItems pAbs' key = { i } style= {{top : item.itemInfo.pos.top, left: item.itemInfo.pos.left}}>
           <button 
-            className = { 'circleButton ' + ( i + 1 !== 1 ? 'disabledGray' : '')} 
+            className = { 'circleButton ' + ( i + 1 !== 1 ? 'disabled2' : '')} 
             id = { i + 1 } 
             onClick = { this.enableItem } >
             <img alt = '' className = '' id = { i + 1 } src = { item.urlImgBtn }/>
@@ -37,7 +37,7 @@ class ModalCircle1 extends Component {
         </div>
       );
     } );
-    // return ITEM;
+    return ITEM;
   }
 
   enableItem = (e) => {
@@ -45,7 +45,7 @@ class ModalCircle1 extends Component {
     e.preventDefault();
     const IDITEM = e.target.id;
     let idItem = parseInt(IDITEM);
-    // console.log(idItem);
+    console.log(e.target);
 
     document.getElementById(idItem).classList.add('visited');
 
@@ -54,7 +54,7 @@ class ModalCircle1 extends Component {
         this.setState({ actualItem : idItem });
         if (idItem !== multimedia.length) {
           let nextItem = document.getElementById(idItem + 1);
-          nextItem.classList.remove('disabledGray');
+          nextItem.classList.remove('disabled2');
           this.setState({ countItem: this.state.countItem + 1 });
         } else {
           this.setState({ countItem: this.state.countItem + 1 });

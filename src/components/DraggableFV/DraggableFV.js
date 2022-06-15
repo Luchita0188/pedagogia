@@ -1,18 +1,18 @@
-import React, {Component} from "react";
-import {DndProvider} from "react-dnd";
+import React, { Component } from "react";
+import { DndProvider } from "react-dnd";
 import HTML5Backend from "react-dnd-html5-backend";
 import DropWord from "./DropFV";
 import DragWord from "./DragFV";
 
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // IMPORT FONT AWESOME LIBRARY
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { far } from '@fortawesome/free-regular-svg-icons';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
 
-import './DraggableFV.scss';
+import "./DraggableFV.scss";
 
 library.add(fas, fab, far);
 
@@ -30,37 +30,40 @@ class DraggableFV extends Component {
 
   mSlides = (e) => {
     const { multimedia, accumulatedPoints, nextQuestion, endQuiz } = this.props;
+  
 
     document.getElementById("contentWords").classList.remove("disabledSolid");
     document.getElementById("boxCheck").classList.add("dNone");
     document.getElementById("boxError").classList.add("dNone");
-    document.getElementById("btnAnt").classList.add("disabled");
-
+    
     if (this.state.page > multimedia.dropZone.paragraph.length - 1) {
-       document.getElementById("contentWords").classList.add("disabledSolid");
-       endQuiz();
-      
+      document.getElementById("contentWords").classList.add("disabledSolid");
+      endQuiz();
     } else {
       this.setState({
-        page: this.state.page + 1
+        page: this.state.page + 1,
       });
-      
+
       if (this.state.questState) {
         accumulatedPoints();
 
         this.questState();
       }
-
+      
       nextQuestion(this.state.page);
     }
     if (e.currentTarget.id === 'btnAnt') {
       this.setState({
-        page: this.state.page - 1
+        page: this.state.page - 1,
       });
     }
+    if (this.state.page === multimedia.dropZone.paragraph.length - 1) {
+      document.getElementById('btnAnt').classList.add('disabled');
+      endQuiz();
+    }
   }
-  
-   render() {
+
+  render() {
     const { multimedia } = this.props;
 
     return (
@@ -76,21 +79,11 @@ class DraggableFV extends Component {
         />
 
         <DndProvider backend={HTML5Backend}>
-          <div className="contentSlide d-Flex j-C aI-C mT-1" id="contentSlide">
-            <button
-              className={
-                "buttonSlide mR-05 " + (this.state.page === 1 ? "disabled" : "")
-              }
-              id="btnAnt"
-              onClick={this.mSlides}
-            >
-              <span className="fa-layers fa-fw iconButton">
+          <div className = 'contentSlide d-Flex j-C aI-C mT-1' id = 'contentSlide'>
+            <button className = { 'buttonSlide mR-05 ' + (this.state.page === 1 ? 'disabled' : 'pulse') } id = 'btnAnt' onClick = { this.mSlides }>
+              <span className = 'fa-layers fa-fw iconButton'  >
                 <FontAwesomeIcon icon="circle" />
-                <FontAwesomeIcon
-                  icon="chevron-left"
-                  inverse
-                  transform="shrink-6"
-                />
+                <FontAwesomeIcon icon="chevron-left" inverse transform="shrink-6" />
               </span>
             </button>
 
@@ -138,8 +131,7 @@ class DraggableFV extends Component {
             </div>
 
             <button
-              className={'buttonSlide mL-05 disabled '}
-              id='btnSig'
+              className = { 'buttonSlide mL-05 ' + (this.state.page === multimedia.dropZone.paragraph.length ? '' : 'pulse') } id = 'btnSig' 
               onClick={this.mSlides}
             >
               <span className="fa-layers fa-fw iconButton">

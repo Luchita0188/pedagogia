@@ -2,7 +2,7 @@
   "coverPage": {
     "type": "startPage",
     "units": 1,
-    "subTitle": "<i>Inducción corporativa</i>",
+    "subTitle": "<b><i>Inducción corporativa</i>",
     "title": "Módulo Pedagogía",
     "module": "",
     "courseName": "Para comenzar, haz clic en el siguiente botón:",
@@ -150,8 +150,8 @@
           "text2": "",
           "colorText": "#023974",
           "pos": {
-            "top": 30,
-            "left": -130
+            "top": 23,
+            "left": -173
           },
           "buttonClose": {
             "closedModal": true,
@@ -169,8 +169,8 @@
           "text2": "",
           "colorText": "#023974",
           "pos": {
-            "top": -53,
-            "left": 125
+            "top": 23,
+            "left": 93
           },
           "buttonClose": {
             "closedModal": true,
@@ -188,8 +188,8 @@
           "text2": "",
           "colorText": "#023974",
           "pos": {
-            "top": 140,
-            "left": 130
+            "top": 285,
+            "left": 100
           },
           "buttonClose": {
             "closedModal": true,
@@ -207,8 +207,8 @@
           "text2": "",
           "colorText": "#023974",
           "pos": {
-            "top": 79,
-            "left": -135
+            "top": 285,
+            "left": -168
           },
           "buttonClose": {
             "closedModal": true,
@@ -497,7 +497,7 @@
           "img": "img/9/check.png"
         },
         "error": {
-          "title": "¡Intenta de nuevo!",
+          "title": "¡Incorrecto!",
           "text": "",
           "img": "img/9/error.png"
         }
@@ -525,7 +525,7 @@
             "dropZone": {
               "imgCheck": "img/9/check.png",
               "textCheck": "¡Bien!",
-              "textError": "¡Intenta de nuevo!",
+              "textError": "¡Incorrecto",
               "paragraph": [
                 {
                   "key": 1,
