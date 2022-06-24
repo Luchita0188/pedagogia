@@ -84,7 +84,7 @@ class Cover extends Component {
 
           {dataPage.title ? 
             <h1
-              className="mT-1 mB-1 F3"
+              className="mT-025 mB-1 F3"
               dangerouslySetInnerHTML={{ __html: dataPage.title }}
             ></h1>: null
           }
@@ -97,7 +97,7 @@ class Cover extends Component {
           }
           {dataPage.courseName ? (
             <p
-              className="mB-2 mR-2 texto2 fw-4"
+              className="mB-1 mR-1 texto2 fw-4"
               dangerouslySetInnerHTML={{ __html: dataPage.courseName }}
             ></p>
           ): null

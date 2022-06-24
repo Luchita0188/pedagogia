@@ -44,24 +44,24 @@
     }
 
     .messageRightIcon-1 {
-      padding: .6em .6em .4em .8em;
+      padding: .5em .5em .3em .8em;
       background-color: #FFFFFF;
       width: auto;
-      max-width: 417px;
+      max-width: 410px;
       border-radius: 7px;
-      margin: auto 3.5em auto auto;
+      margin: auto 4.1em auto auto;
 
       &:after {
         content: "";
         display: block;
-        width: 48px;
-        height: 48px;
+        width: 49px;
+        height: 49px;
         background-image: url('../assets/img/backgrounds/iconChat-2.png');
         background-position: center;
         background-repeat: no-repeat;
         position: absolute;
         top: 0px;
-        right: -39px;
+        right: -30px;
       }
     }
 

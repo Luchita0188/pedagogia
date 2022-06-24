@@ -25,11 +25,6 @@ const DragWord = ({
         document.getElementById("boxDrop-" + dropResult.id).classList.add("WordDropped");
         document.getElementById("boxCheck").classList.remove("dNone");
         
-<<<<<<< HEAD
-=======
-        document.getElementById("btnSig").classList.add("disabled");
-        
->>>>>>> 127b31e377ae884e1cde2329e0654b96e0e41821
         document.getElementById("btnAnt").classList.remove("disabled");
 
         document.getElementById("audioNotification").src = "audio/check.mp3";
